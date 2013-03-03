@@ -10,7 +10,13 @@ def feature_extractor():
     features = [('FullDescription-Bag of Words', 'FullDescription', CountVectorizer(max_features=100)),
                 ('Title-Bag of Words', 'Title', CountVectorizer(max_features=100)),
                 ('LocationRaw-Bag of Words', 'LocationRaw', CountVectorizer(max_features=100)),
-                ('LocationNormalized-Bag of Words', 'LocationNormalized', CountVectorizer(max_features=100))]
+                ('LocationNormalized-Bag of Words', 'LocationNormalized', CountVectorizer(max_features=100)),
+                ('NN-Bag of Words', 'NN', CountVectorizer(max_features=100)),
+                ('NNP-Bag of Words', 'NNP', CountVectorizer(max_features=100)),
+                ('NNS-Bag of Words', 'NNS', CountVectorizer(max_features=100)),
+                ('VBD-Bag of Words', 'VBD', CountVectorizer(max_features=100)),
+                ('JJ-Bag of Words', 'JJ', CountVectorizer(max_features=100)),
+                ('RB-Bag of Words', 'RB', CountVectorizer(max_features=100)),]
     combined = FeatureMapper(features)
     return combined
 
