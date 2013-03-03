@@ -19,6 +19,12 @@ converters = { "FullDescription" : identity
              , "Title": identity
              , "LocationRaw": identity
              , "LocationNormalized": identity
+             , "NN": identity
+             , "NNP": identity
+             , "NNS": identity
+             , "VBD": identity
+             , "JJ": identity
+             , "RB": identity
              }
 
 def get_train_df():
